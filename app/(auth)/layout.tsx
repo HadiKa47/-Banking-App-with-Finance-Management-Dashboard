@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,7 +10,13 @@ export default function RootLayout({
       {children}
       <div className="auth-asset">
         <div>
-          
+          <Image 
+            src="/icons/home-auth-image.png"
+            alt="Auth image"
+            width={750}
+            height={750}
+            className="rounded-l-xl object-contain"
+          />
         </div>
       </div>
     </main>
